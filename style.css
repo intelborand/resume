@@ -286,8 +286,9 @@ p {
 
 /* Expierense ******/
 
-..expierense {
+.expierense {
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .expierense__header {
@@ -357,22 +358,89 @@ p {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    padding: 0 0 48px 0
+    padding: 0 0 48px 0;
 }
 
 
+/******* Skills  */
+
+.skills {
+    width: 100%;
+}
+
+.skills__header {
+    text-align: center;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0 20px 0;
+
+}
 
 
+.skills__header__title {
+    font-family: 'Goldman', cursive;
+    font-size: 40px;
+    padding-top: 50p;
+    text-align: center;
+}
 
 
+.skills_text {
+    padding: 40px 250px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 
+}
+
+.skills_text_li {
+  width: 33.3333%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+/* Button to UP */
+
+#buttonUp.show {
+    display: block;
+}
+
+#buttonUp {   
+    display: none;   
+    background-color: #524737;   
+    width: 50px;   
+    height: 50px;   
+    text-align: center;   
+    border-radius: 4px;   
+    margin: 30px;   
+    position: fixed;   
+    bottom: 30px;   
+    right: 30px;   
+    transition: background-color .3s;   
+    z-index: 1000; 
+} 
+
+#buttonUp:hover {   
+    cursor: pointer;   
+    background-color: #333; 
+} 
+
+#buttonUp:active {   
+    background-color: #555; 
+} 
 
 
-
-
-
-
-
+#buttonUp::after {
+    content: "\f062";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff; 
+} 
 
 
