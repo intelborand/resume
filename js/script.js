@@ -2,7 +2,9 @@
 
 const btnContact = document.querySelector('.btn'),
       expTitle = document.querySelector('.expierense__header__title'),
-      aboutMe = document.querySelector('.about-me__subtitle');
+      aboutMe = document.querySelector('.about-me__subtitle'),
+      btnLink = document.querySelectorAll('.button_link'),
+      containerLink = document.querySelector('.container_link');
 
 
 jQuery(document).ready(function() {
@@ -21,3 +23,4 @@ jQuery(document).ready(function() {
         $('html, body').animate({scrollTop:0}, '300');
     });
 });
+
