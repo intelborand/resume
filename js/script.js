@@ -1,13 +1,15 @@
 'use strict'
+window.addEventListener('DOMContentLoaded', (e) => {
+  e.preventDefault();
 
-const btnContact = document.querySelector('.btn'),
+  const btnContact = document.querySelector('.btn'),
       expTitle = document.querySelector('.expierense__header__title'),
       aboutMe = document.querySelector('.about-me__subtitle'),
       btnLink = document.querySelectorAll('.button_link'),
       containerLink = document.querySelector('.container_link');
 
 
-jQuery(document).ready(function() {
+  jQuery(document).ready(function() {
     var btn = $('#buttonUp'); 
 
     $(window).scroll(function() {     
@@ -22,5 +24,6 @@ jQuery(document).ready(function() {
         e.preventDefault();
         $('html, body').animate({scrollTop:0}, '300');
     });
-});
+  });
 
+});
